@@ -35,15 +35,15 @@ class CalendarsController < ApplicationController
       plans.each do |plan|
         today_plans.push(plan.plan) if plan.date == @todays_date + x
       end
+
       require "date"
 
 day = Date.today.wday
 days = ["日曜日", "月曜日", "火曜日", "水曜日", "木曜日", "金曜日", "土曜日"]
 
 if 
-   wday_num = wday_num -7
-else
-  puts "今日は#{days[day]}"
+   wday_num = wday_num 
+
 end
       days = { :month => (@todays_date + x).month, :date => (@todays_date+x).day, :plans => today_plans}
       @week_days.push(days)
