@@ -42,20 +42,8 @@ class CalendarsController < ApplicationController
 
 
 day = Date.today.wday + x
-# # 1 x = 0
-# day = Date.today.wday + 0 (day = 1)
-# # 2 x = 1
-# day = Date.today.wday + 1 (day = 2)
-# # 3 x = 2
-# day = Date.today.wday + 2 (day = 3)
-# # 4 x = 3
-# day = Date.today.wday + 3 (day = 4)
-# day = Date.today.wday + 4 (day = 5)
-# day = Date.today.wday + 5 (day = 6)
-# ===========
-# day = Date.today.wday + 6 - 7 (day = 7)
 
-if   day >= 7 #dayが7以上になったら
+if   day >= 7 
    day = day - 7
 end
      
